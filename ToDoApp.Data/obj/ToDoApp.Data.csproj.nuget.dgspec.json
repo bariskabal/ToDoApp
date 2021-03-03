@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\baris\\OneDrive\\Masaüstü\\AspNet\\ToDoApp\\ToDoApp.Data\\ToDoApp.Data.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\baris\\OneDrive\\Masaüstü\\AspNet\\ToDoApp\\ToDoApp.Data\\ToDoApp.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\baris\\OneDrive\\Masaüstü\\AspNet\\ToDoApp\\ToDoApp.Data\\ToDoApp.Data.csproj",
+        "projectName": "ToDoApp.Data",
+        "projectPath": "C:\\Users\\baris\\OneDrive\\Masaüstü\\AspNet\\ToDoApp\\ToDoApp.Data\\ToDoApp.Data.csproj",
+        "packagesPath": "C:\\Users\\baris\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\baris\\OneDrive\\Masaüstü\\AspNet\\ToDoApp\\ToDoApp.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\baris\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "C:\\Users\\baris\\OneDrive\\Masaüstü\\AspNet\\ToDoApp\\ToDoApp.Entities\\ToDoApp.Entities.csproj": {
+                "projectPath": "C:\\Users\\baris\\OneDrive\\Masaüstü\\AspNet\\ToDoApp\\ToDoApp.Entities\\ToDoApp.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\baris\\OneDrive\\Masaüstü\\AspNet\\ToDoApp\\ToDoApp.Entities\\ToDoApp.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\baris\\OneDrive\\Masaüstü\\AspNet\\ToDoApp\\ToDoApp.Entities\\ToDoApp.Entities.csproj",
+        "projectName": "ToDoApp.Entities",
+        "projectPath": "C:\\Users\\baris\\OneDrive\\Masaüstü\\AspNet\\ToDoApp\\ToDoApp.Entities\\ToDoApp.Entities.csproj",
+        "packagesPath": "C:\\Users\\baris\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\baris\\OneDrive\\Masaüstü\\AspNet\\ToDoApp\\ToDoApp.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\baris\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

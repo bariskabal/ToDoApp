@@ -1,0 +1,35 @@
+@model GorevListAllDto
+
+
+
+@{
+    Layout="~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@if (Model.Raporlar.Count > 0)
+{
+    <a asp-action="GetirExcel" asp-route-id="@Model.Id" target="_blank" class="btn btn-light btn-sm my-2">Excel<i class="fas fa-file-excel ml-2"></i></a>
+    <a asp-action="GetirPdf" asp-route-id="@Model.Id" target="_blank" class="btn btn-light btn-sm mr-2">Pdf <i class="fas fa-file-pdf ml-2"></i></a>
+    <table class="table table-hover table-sm text-center table-bordered ">
+        <tr>
+            <th colspan="2">@Model.AppUser.Name @Model.AppUser.SurName personelinizin @Model.Ad görevine yazmış olduğu raporlar</th>
+        </tr>
+        <tr>
+            <th>Tanim</th>
+            <th>Detay</th>
+        </tr>
+        @foreach (var item in Model.Raporlar)
+        {
+            <tr>
+                <td>@item.Tanim</td>
+                <td>@item.Detay</td>
+            </tr>
+        }
+    </table>
+}
+else{
+    <div class="border border-dark mt-2 text-center">
+        @Model.AppUser.Name @Model.AppUser.SurName personeliniz şuan @Model.Ad görevi üzerinde çalışıyor. Henüz bir rapor yazmamış.
+    </div>
+
+}

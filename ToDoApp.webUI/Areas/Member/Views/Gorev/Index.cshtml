@@ -1,0 +1,71 @@
+@model List<GorevListAllDto>
+
+
+@{
+    Layout="~/Areas/Member/Views/Shared/_MemberLayout.cshtml";
+    int index=0;
+}
+
+
+@foreach (var item in Model)
+{
+    index++;
+    <div class="card my-1">
+        <div class="card-header">
+            @item.Ad
+        </div>
+        <div class="card-body">
+            <h5 class="card-title"><span class="text-danger">Aciliyet Durumu :</span>
+                @item.Aciliyet.Tanim</h5>
+            <p class="card-text">@item.Aciklama</p>
+
+            <p class="text-right">
+                @if (item.Raporlar.Count>0)
+                {
+                    <a class="btn btn-light btn-sm" data-toggle="collapse" href="#collapseExample-@index" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fas fa-caret-down mr-2"></i>
+                        Raporlara git
+                        <span class="badge badge-dark">@item.Raporlar.Count</span>
+                    </a>
+                    
+                }
+               
+                
+                </p>
+                <div class="collapse" id="collapseExample-@index">
+                    
+
+                    <table class="table table-hover table-bordered table-sm">
+                        <tr>
+                            <td>Ad</td>
+                            <td>Tanım</td>
+                            
+                        </tr>
+                        <tr>
+                            @foreach (var items in item.Raporlar)
+                            {
+                                <tr>
+                                    <td>@items.Tanim</td>
+                                    <td>@items.Detay</td>
+                                    
+                                </tr>
+                            }
+                        </tr>
+                    </table>
+                </div> 
+        </div>
+    </div>
+}
+
+<nav aria-label="Page navigation example" class="float-right">
+  <ul class="pagination">
+    @for (int i = 1; i <= ViewBag.ToplamSayfa; i++)
+    {
+        <li class="page-item @(ViewBag.AktifSayfa == i?"active":"")">
+            <a class="page-link" asp-action="Index" asp-route-aktifSayfa="@i">@i</a>
+        </li> 
+    }
+  </ul>
+</nav>
+
+

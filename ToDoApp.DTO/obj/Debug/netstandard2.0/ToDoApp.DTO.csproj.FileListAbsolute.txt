@@ -1,0 +1,9 @@
+C:\Users\baris\Desktop\AspNet\ToDoApp\ToDoApp.DTO\bin\Debug\netstandard2.0\ToDoApp.DTO.deps.json
+C:\Users\baris\Desktop\AspNet\ToDoApp\ToDoApp.DTO\bin\Debug\netstandard2.0\ToDoApp.DTO.dll
+C:\Users\baris\Desktop\AspNet\ToDoApp\ToDoApp.DTO\bin\Debug\netstandard2.0\ToDoApp.DTO.pdb
+C:\Users\baris\Desktop\AspNet\ToDoApp\ToDoApp.DTO\obj\Debug\netstandard2.0\ToDoApp.DTO.csprojAssemblyReference.cache
+C:\Users\baris\Desktop\AspNet\ToDoApp\ToDoApp.DTO\obj\Debug\netstandard2.0\ToDoApp.DTO.AssemblyInfoInputs.cache
+C:\Users\baris\Desktop\AspNet\ToDoApp\ToDoApp.DTO\obj\Debug\netstandard2.0\ToDoApp.DTO.AssemblyInfo.cs
+C:\Users\baris\Desktop\AspNet\ToDoApp\ToDoApp.DTO\obj\Debug\netstandard2.0\ToDoApp.DTO.csproj.CoreCompileInputs.cache
+C:\Users\baris\Desktop\AspNet\ToDoApp\ToDoApp.DTO\obj\Debug\netstandard2.0\ToDoApp.DTO.dll
+C:\Users\baris\Desktop\AspNet\ToDoApp\ToDoApp.DTO\obj\Debug\netstandard2.0\ToDoApp.DTO.pdb

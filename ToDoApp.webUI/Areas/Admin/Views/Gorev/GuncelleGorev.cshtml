@@ -1,0 +1,37 @@
+@model GorevUpdateDto
+
+
+@{
+    Layout="~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<form asp-asp-action="GuncelleGorev" method="post" class="w-75 mx-auto p-3">
+    <input type="hidden" asp-for="@Model.Id">
+    <div class="form-goup">
+        <label>Ad : </label>
+        <span asp-validation-for="@Model.Ad" class="text-danger"></span>
+        <input type="text" asp-for="Ad" class="form-control">
+    </div>
+    <div class="form-goup">
+        <label>Açıklama :</label>
+        <span asp-validation-for="@Model.Aciklama" class="text-danger"></span>
+        <textarea asp-for="Aciklama" class="form-control"></textarea>
+    </div>
+    <div class="form-goup">
+        <label>Aciliyet Durumu Seçiniz:</label>
+        <span asp-validation-for="@Model.AciliyetId" class="text-danger"></span>
+        <select asp-for="AciliyetId" class="form-control" asp-items="ViewBag.Aciliyetler">
+            <option hidden value="-1">Seçiniz</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-info btn-sm mt-3">Kaydet <i class="fas fa-check ml-2"></i></button>
+
+</form>
+
+
+
+@section JavaScript{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
